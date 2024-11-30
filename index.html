@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Embed with Pop-Up and Telegram Button</title>
+  <title>Embed with Pop-Up, Telegram Button, and Disclaimer</title>
   
-  <!-- Styles for Telegram Button and Pop-Up -->
+  <!-- Styles for Telegram Button, Pop-Up, and Disclaimer -->
   <style>
     /* Telegram Button Styles */
     .telegram-button {
@@ -63,26 +63,53 @@
     .no-scroll {
       overflow: hidden;
     }
+
+    /* Disclaimer Marquee Styles */
+    .disclaimer {
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 0;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    marquee {
+      background-color: darkred;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
+  <!-- Telegram Button Section -->
+  <div class="telegram-button">
+    <a href="https://t.me/+xl-C7GFGTkM4MDk5" target="_blank">Join Telegram Channel</a>
+  </div>
+
+  <!-- Disclaimer Section -->
+  <div class="disclaimer">
+    <marquee behavior="scroll" direction="left">
+      "Copyright Disclaimer: We do not stream any of the channels included in this website. All streaming links are from third-party websites freely available on the internet. All content is the copyright of its respective owners."
+    </marquee>
+  </div>
+
   <!-- Iframe Section -->
   <iframe 
     sandbox="allow-scripts allow-same-origin" 
     width="500" 
     height="390" 
     src="https://t20wc.pages.dev/criclife" 
-    style="border: 0; margin-left: -1px; margin-top: -270px; width: 100%;" 
+    style="border: 0; margin-top: 20px; width: 100%;" 
     title="video player" 
     frameborder="0" 
     scrolling="no" 
     allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
   </iframe>
-
-  <!-- Telegram Button Section -->
-  <div class="telegram-button">
-    <a href="https://t.me/+xl-C7GFGTkM4MDk5" target="_blank">Join Telegram Channel</a>
-  </div>
 
   <!-- Scripts Section -->
   <script>
